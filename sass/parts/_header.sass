@@ -1,0 +1,50 @@
+.header
+    padding: 20px 0 128px 0
+    &_block 
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &_menu
+        +tablet
+            display: none
+        &.active
+            text-align: left
+            display: flex
+            flex-direction: column
+            position: absolute
+            top: 0
+            left: 0
+            width: 30%
+            height: 100vh
+            background: rgba(0, 0, 0, 0.9)
+            align-items: left
+            justify-content: center
+            & ul 
+                flex-direction: column 
+            & li
+                margin-right: 0
+                margin-bottom: 20px
+            & a
+                color: #fff
+            & li
+                margin: 0px 0px 20px 0px 
+    &_menu ul 
+        display: flex
+        align-items: center
+        li
+            margin-left: 30px
+        
+    &_button 
+        padding: 4px 23px 5px 23px
+        background-color: #BA323D
+        color: #fff
+        border-radius: 15px
+        a 
+            color: #fff
+        
+    &_item a 
+        color: #000000
+.hamburger
+    display: none
+    +tablet
+        display: block
