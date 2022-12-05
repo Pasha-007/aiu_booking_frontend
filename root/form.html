@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/hamburger.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <title>Form</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <header class="header_block">
+                <a href="#"><img src="/images/Logo.svg" alt="Logo"></a>
+                <nav class="header_menu" id="menu">
+                    <ul>
+                        <li class="header_item"><a href="http://127.0.0.1:5500/root/index.html">Main page</a></li>
+                        <li class="header_button"><a href="http://127.0.0.1:5500/root/signin.html">Login</a></li>
+                        <li class="header_button"><a href="http://127.0.0.1:5500/root/signup.html">Signup</a></li>
+                    </ul>
+                </nav>
+                <button class="hamburger hamburger--spring" type="button" id="hamburger">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+        </div>
+    </header>
+
+    <div class="form">
+        <div class="container">
+            <div class="form_block">
+                <div class="form_fill">
+                    <form action="#">
+                        <input type="text" name="facility_name" id="facility_name" placeholder="Facility Name">
+                        <input type="text" name="facility_description" id="facility_description" placeholder="Description">
+                        <input type="file" name="file" id="file" placeholder="Image URL">
+                        <label for="file">Image URL</label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
