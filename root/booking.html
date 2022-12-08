@@ -34,34 +34,46 @@
     <div class="book">
         <div class="container">
             <div class="book_block">
-                <div class="book_text">
-                    <h2>Set your bookings Now!</h2>
-                    <p>with only a few clicks, send your request to book a facility, select the correct time and date!</p>
-                </div>
-                <div class="book_images">
-                    <div class="book_content">
-                        <div class="book_item">
-                            <img src="/images/Bimage/BBall.png" alt="img">
-                        </div>
-                        <div class="book_item">
-                            <img src="/images/Bimage/Vball.png" alt="img">
-                        </div>
-                        <div class="book_item">
-                            <img src="/images/Bimage/Tennis.png" alt="img">
-                        </div>
-                        <div class="book_item">
-                            <img src="/images/Bimage/Fball.png" alt="img">
+                <div class="book_info">
+                    <div class="book_text">
+                        <h2>Set your bookings Now!</h2>
+                        <p>with only a few clicks, send your request to book a facility, select the correct time and date!
+                        </p>
+                    </div>
+                    <div class="book_images">
+                        <div class="book_content">
+                            <div class="book_item">
+                                <img src="/images/Bimage/BBall.png" alt="img">
+                            </div>
+                            <div class="book_item">
+                                <img src="/images/Bimage/Vball.png" alt="img">
+                            </div>
+                            <!-- <div class="book_item">
+                                <img src="/images/Bimage/Tennis.png" alt="img">
+                            </div>
+                            <div class="book_item">
+                                <img src="/images/Bimage/Fball.png" alt="img">
+                            </div> -->
                         </div>
                     </div>
                 </div>
             </div>
             <div class="book_calender">
-                <form action="#">
+                <label for="facility_name" class="book_name">Select a facility</label>
+                <select name="facility_name" id="facility_name">
+                    <option value="Football">Football</option>
+                    <option value="BasketBall">BasketBall</option>
+                    <option value="volleyball">volleyball</option>
+                    <option value="Indoor court">Indoor court</option>
+                    <option value="Table Tennis">Table Tennis</option>
+                    <option value="Tennis court">Tennis court</option>
+                </select>
+                <form action="#" class="book_date">
                     <label for="Book_date">Date:</label>
                     <input type="date" id="Book_date" name="Book_date">
-                    <input type="submit">
-                  </form>
-
+                    <input type="submit" class="book_submit">
+                </form>
+    
             </div>
         </div>
     </div>
