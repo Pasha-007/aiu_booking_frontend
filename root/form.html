@@ -12,15 +12,15 @@
     <title>Form</title>
 </head>
 <body>
-    <header class="header">
+    <header class="form_header">
         <div class="container">
-            <header class="header_block">
+            <header class="form_headcontent">
                 <a href="#"><img src="/images/Logo.svg" alt="Logo"></a>
                 <nav class="header_menu" id="menu">
                     <ul>
-                        <li class="header_item"><a href="http://127.0.0.1:5500/root/index.html">Main page</a></li>
-                        <li class="header_button"><a href="http://127.0.0.1:5500/root/signin.html">Login</a></li>
-                        <li class="header_button"><a href="http://127.0.0.1:5500/root/signup.html">Signup</a></li>
+                        <li class="form_item"><a href="http://127.0.0.1:5500/root/index.html">Main page</a></li>
+                        <li class="form_button"><a href="http://127.0.0.1:5500/root/signin.html">Login</a></li>
+                        <li class="form_button"><a href="http://127.0.0.1:5500/root/signup.html">Signup</a></li>
                     </ul>
                 </nav>
                 <button class="hamburger hamburger--spring" type="button" id="hamburger">
@@ -34,14 +34,14 @@
     <div class="form">
         <div class="container">
             <div class="form_block">
-                <div class="form_fill">
-                    <form action="#">
-                        <input type="text" name="facility_name" id="facility_name" placeholder="Facility Name">
-                        <input type="text" name="facility_description" id="facility_description" placeholder="Description">
-                        <input type="file" name="file" id="file" placeholder="Image URL">
-                        <label for="file">Image URL</label>
-                    </form>
-                </div>
+                <h2 class="form_title">FACILITY</h2>
+                <form action="#">
+                    <input type="text" placeholder="Facility Name ">
+                    <input type="text" placeholder="Description">
+                    <input type="file" name="facility_image" id="facility_image" class="form_button">
+                    <label for="facility_image">Choose a photo</label>
+                </form>
+                <a href="#">Submit</a>
             </div>
         </div>
     </div>
