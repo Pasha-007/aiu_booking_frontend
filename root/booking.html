@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&family=Playfair+Display:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link href="css-cal/mobiscroll.javascript.min.css" rel="stylesheet" />
+    <script src="js-cal/mobiscroll.javascript.min.js"></script>
     <link rel="stylesheet" href="/styles/hamburger.css">
     <link rel="stylesheet" href="/styles/main.css">
     <title>Booking Page</title>
 </head>
+
 <body>
-    <header class="header"  id="header">
+    <header class="header" id="header">
         <div class="container">
             <header class="header_block">
-                <a href="#"><img src="/images/Logo.svg" alt="Logo"></a>
+                <a href="http://127.0.0.1:5500/root/index.html"><img src="/images/Logo.svg" alt="Logo"></a>
                 <nav class="header_menu" id="menu">
                     <ul>
-                        
+
                         <li class="header_item"><a href="http://127.0.0.1:5500/root/form.html">form</a></li>
                         <li class="header_button"><a href="http://127.0.0.1:5500/root/signin.html">Login</a></li>
                         <li class="header_button"><a href="http://127.0.0.1:5500/root/signup.html">Signup</a></li>
@@ -37,46 +43,33 @@
                 <div class="book_info">
                     <div class="book_text">
                         <h2>Set your bookings Now!</h2>
-                        <p>with only a few clicks, send your request to book a facility, select the correct time and date!
+                        <p>with only a few clicks, send your request to book a facility, select the correct time and
+                            date!
                         </p>
+                        <label for="facility_name" class="book_name">Select a facility</label>
+                        <select name="facility_name" id="facility_name" class="book_name">
+                            <option value="Football">Football</option>
+                            <option value="BasketBall">BasketBall</option>
+                            <option value="volleyball">volleyball</option>
+                            <option value="Indoor court">Indoor court</option>
+                            <option value="Table Tennis">Table Tennis</option>
+                            <option value="Tennis court">Tennis court</option>
+                        </select>
+                        <input type="date" class="book_inputdate">
+                        <input type="time" name="start_time" id="start_time" class="book_timer">
+                        <input type="time" name="end_time" id="end_time" class="book_timer">
+                        <button class="book_request">Send request</button>
                     </div>
                     <div class="book_images">
                         <div class="book_content">
-                            <div class="book_item">
-                                <img src="/images/Bimage/BBall.png" alt="img">
-                            </div>
-                            <div class="book_item">
-                                <img src="/images/Bimage/Vball.png" alt="img">
-                            </div>
-                            <!-- <div class="book_item">
-                                <img src="/images/Bimage/Tennis.png" alt="img">
-                            </div>
-                            <div class="book_item">
-                                <img src="/images/Bimage/Fball.png" alt="img">
-                            </div> -->
+                            <img src="/images/booking img.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="book_calender">
-                <label for="facility_name" class="book_name">Select a facility</label>
-                <select name="facility_name" id="facility_name">
-                    <option value="Football">Football</option>
-                    <option value="BasketBall">BasketBall</option>
-                    <option value="volleyball">volleyball</option>
-                    <option value="Indoor court">Indoor court</option>
-                    <option value="Table Tennis">Table Tennis</option>
-                    <option value="Tennis court">Tennis court</option>
-                </select>
-                <form action="#" class="book_date">
-                    <label for="Book_date">Date:</label>
-                    <input type="date" id="Book_date" name="Book_date">
-                    <input type="submit" class="book_submit">
-                </form>
-    
-            </div>
+            
         </div>
     </div>
-    
 </body>
+
 </html>

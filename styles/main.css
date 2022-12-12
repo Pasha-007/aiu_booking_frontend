@@ -190,7 +190,6 @@ button {
   }
 }
 .main_buttons {
-  margin-left: 53px;
   margin-top: 40px;
 }
 @media screen and (max-width: 992px) {
@@ -404,14 +403,15 @@ button {
           justify-content: space-between;
 }
 .book_content {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 32px 1fr;
-  grid-template-columns: 1fr 1fr;
-  -webkit-column-gap: 32px;
-     -moz-column-gap: 32px;
-          column-gap: 32px;
-  row-gap: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .book_text {
   width: calc(50% - 100px);
@@ -435,17 +435,51 @@ button {
   width: 100%;
 }
 .book_name {
-  font-weight: 400;
   font-size: 18px;
-  line-height: 34px;
-  margin-right: 20px;
-}
-.book_date {
-  margin-top: 20px;
+  line-height: 34pxr;
+  margin-right: 10px;
+  padding: 15px;
+  background-color: rgba(212, 36, 50, 0.8);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #ffffff;
+  margin-bottom: 20px;
 }
 .book_submit {
   padding: 5px 15px;
   background-color: #BA323D;
   color: #fff;
   border-radius: 10px;
+}
+.book_inputdate {
+  background-color: rgba(212, 36, 50, 0.8);
+  padding: 15px;
+  font-family: "Roboto Mono", monospace;
+  color: #ffffff;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.book_timer {
+  font-size: 18px;
+  padding: 15px;
+  background-color: rgba(212, 36, 50, 0.8);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #ffffff;
+  margin-right: 10px;
+}
+.book_request {
+  margin-top: 20px;
+  font-size: 18px;
+  padding: 15px;
+  background-color: rgba(212, 36, 50, 0.8);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #ffffff;
 }

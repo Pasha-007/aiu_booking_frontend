@@ -18,3 +18,18 @@ window.addEventListener("scroll", () => {
     }
   })
   
+  mobiscroll.setOptions({
+    theme: 'ios',
+    themeVariant: 'light'
+});
+
+mobiscroll.datepicker('#demo-range-selection', {
+    controls: ['datetime'],
+    select: 'range',
+    display: 'inline',
+    showRangeLabels: true,
+    rangeStartLabel: 'Outbound',
+    rangeEndLabel: 'Return',
+    minRange: 3,
+    maxRange: 10
+});
