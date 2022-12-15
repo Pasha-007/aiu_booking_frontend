@@ -20,8 +20,8 @@
                 <nav class="header_menu" id="menu">
                     <ul>
                         <li class="form_item"><a href="http://127.0.0.1:5500/root/index.html">Main page</a></li>
-                        <li class="form_button"><a href="http://127.0.0.1:5500/root/signin.html">Login</a></li>
-                        <li class="form_button"><a href="http://127.0.0.1:5500/root/signup.html">Signup</a></li>
+                        <li class="header_button"><a href="http://127.0.0.1:5500/root/signin.html">Login</a></li>
+                        <li class="header_button"><a href="http://127.0.0.1:5500/root/signup.html">Signup</a></li>
                     </ul>
                 </nav>
                 <button class="hamburger hamburger--spring" type="button" id="hamburger">
@@ -34,20 +34,26 @@
 
     <div class="form">
         <div class="container">
-            <div class="form_block">
-                <h2 class="form_title">FACILITY</h2>
-                <form action="#">
-                    <input type="text" placeholder="Facility Name ">
-                    <input type="text" placeholder="Description">
-                    <input type="file" name="facility_image" id="facility_image" class="form_button1">
-                    <label for="facility_image" class="form_photo">Choose a photo</label>
-                </form>
-                <div id="demo-range-selection"></div>
-                <a href="#">Submit</a>
+            <div class="form_content">
+
+                <div class="form_block">
+                    <div class="form_text">
+                        <h2 class="form_title">FACILITY</h2>
+                        <form action="#">
+                            <input type="text" placeholder="Facility Name ">
+                            <input type="text" placeholder="Description">
+                            <input type="file" name="facility_image" id="facility_image" class="form_button1">
+                            <label for="facility_image" class="form_photo">Choose a photo</label>
+                        </form>                    
+                    </div>
+                    <div class="form_buttons">
+                        <a href="#">Submit</a>
+                    </div>
+                </div>
             </div>
             
         </div>
     </div>
-    
+    <script src="/script.js"></script>
 </body>
 </html>

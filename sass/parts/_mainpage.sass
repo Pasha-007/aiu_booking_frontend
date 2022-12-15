@@ -1,18 +1,22 @@
 .main
-    
     &_block
         display: flex
-        justify-content: space-between
+        align-items: center
+        justify-content: space-between    
     &_image
         width: 50%
         margin-bottom: 100px
         img
             width: 100%
+        +phone
+            margin-bottom: 40px
+
     &_text 
         width: calc( 50% - 103px )
         margin-top: 45px
         +tablet
             margin-top: 0px
+            margin-bottom: 10px
         h2
             font-weight: 600
             font-size: 75px
@@ -21,8 +25,14 @@
             margin-bottom: 16px
         +tablet
             h2
-                font-size: 50px  
-                line-height: 50px
+                font-size: 30px  
+                line-height: 30px
+        +phone
+            h2                
+                font-size: 20px
+                line-height: 30px
+            align-items: center
+            width: calc( 50% - 40px )    
         p
             font-weight: 400
             font-size: 18px
@@ -30,10 +40,12 @@
             color: #000000
         +tablet
             p
-                font-size: 15px
-                line-height: 20px  
+                font-size: 14px
+                line-height: 20px
+        +phone
+            p
+                font-size: 10px
     &_buttons 
-        // margin-left: 53px
         margin-top: 40px
         +laptop
             margin-left: 0px
@@ -49,6 +61,9 @@
             margin-bottom: 10px
             margin-right: 0px
             padding: 10px 20px
+        +tablet
+            display: none
+
 
 
 

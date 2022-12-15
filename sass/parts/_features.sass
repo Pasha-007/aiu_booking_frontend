@@ -1,28 +1,49 @@
 .features
     &_title
-        text-align: center
+        display: flex
+        justify-content: center
         margin-bottom: 31px
         font-size: 45px
         line-height: 60px
         color: #000000
+        +phone
+            font-size: 20px
+            margin-bottom: 12px
+            line-height: 20px
     &_content
         display: grid
-        grid-template-columns: 1fr 1fr 1fr
+        grid-template-columns: repeat(3, 1fr)
         column-gap: 32px
         row-gap: 32px
         text-align: center
+        +laptop
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            align-items: center
+            column-gap: 0
+
+        +tablet
+            display: grid
+            grid-template-columns: 1fr
+            align-items: center
+            text-align: center
     &_item
         img
             margin-bottom: 19px
-        a
-            padding: 4px 39px
-            background-color: #BA323D
-            color: #fff
-            text-align: center
-            border-radius: 15px
         p 
             font-size: 15px
-            width: 292px
-            transform: translateX(50px)
+            text-align: center
             margin-top: 20px
+            +laptop
+                display: none
+    &_button
+        padding: 4px 39px
+        background-color: #BA323D
+        color: #fff
+        border-radius: 15px
+        justify-content: center
+        +laptop
+            display: none
+            
+                
     

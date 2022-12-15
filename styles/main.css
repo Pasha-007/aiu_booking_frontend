@@ -53,6 +53,11 @@ button {
   padding: 20px 0 20px 0;
   margin-bottom: 138px;
 }
+@media screen and (max-width: 768px) {
+  .header {
+    margin-bottom: 30px;
+  }
+}
 .header_block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -144,6 +149,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -155,6 +163,11 @@ button {
 .main_image img {
   width: 100%;
 }
+@media screen and (max-width: 576px) {
+  .main_image {
+    margin-bottom: 40px;
+  }
+}
 .main_text {
   width: calc(50% - 103px);
   margin-top: 45px;
@@ -162,6 +175,7 @@ button {
 @media screen and (max-width: 768px) {
   .main_text {
     margin-top: 0px;
+    margin-bottom: 10px;
   }
 }
 .main_text h2 {
@@ -173,8 +187,20 @@ button {
 }
 @media screen and (max-width: 768px) {
   .main_text h2 {
-    font-size: 50px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .main_text {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: calc(50% - 40px);
+  }
+  .main_text h2 {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 .main_text p {
@@ -185,14 +211,19 @@ button {
 }
 @media screen and (max-width: 768px) {
   .main_text p {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .main_text p {
+    font-size: 10px;
   }
 }
 .main_buttons {
   margin-top: 40px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 995px) {
   .main_buttons {
     margin-left: 0px;
   }
@@ -204,7 +235,7 @@ button {
   border-radius: 15px;
   margin-right: 11px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 995px) {
   .main_item {
     width: 50%;
     margin-bottom: 10px;
@@ -212,41 +243,94 @@ button {
     padding: 10px 20px;
   }
 }
+@media screen and (max-width: 768px) {
+  .main_item {
+    display: none;
+  }
+}
 
 .features_title {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 31px;
   font-size: 45px;
   line-height: 60px;
   color: #000000;
 }
+@media screen and (max-width: 576px) {
+  .features_title {
+    font-size: 20px;
+    margin-bottom: 12px;
+    line-height: 20px;
+  }
+}
 .features_content {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 32px 1fr 32px 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   -webkit-column-gap: 32px;
      -moz-column-gap: 32px;
           column-gap: 32px;
   row-gap: 32px;
   text-align: center;
 }
+@media screen and (max-width: 995px) {
+  .features_content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 0 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .features_content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
 .features_item img {
   margin-bottom: 19px;
 }
-.features_item a {
+.features_item p {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 20px;
+}
+@media screen and (max-width: 995px) {
+  .features_item p {
+    display: none;
+  }
+}
+.features_button {
   padding: 4px 39px;
   background-color: #BA323D;
   color: #fff;
-  text-align: center;
   border-radius: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.features_item p {
-  font-size: 15px;
-  width: 292px;
-  -webkit-transform: translateX(50px);
-          transform: translateX(50px);
-  margin-top: 20px;
+@media screen and (max-width: 995px) {
+  .features_button {
+    display: none;
+  }
 }
 
 .footer_block {
@@ -293,12 +377,23 @@ button {
 .signIn_image img {
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  .signIn_image {
+    display: none;
+  }
+}
 .signIn_text {
   margin-top: 100px;
   width: calc(50% - 90px);
 }
 .signIn_text p {
   margin-bottom: 26px;
+}
+@media screen and (max-width: 768px) {
+  .signIn_text {
+    width: 100%;
+    margin-top: 0px;
+  }
 }
 .signIn_heading {
   font-size: 50px;
@@ -326,8 +421,8 @@ button {
   border-radius: 15px;
 }
 .signIn_B2 {
-  margin-left: 20px;
   color: #000;
+  margin-left: 20px;
 }
 
 .form {
@@ -344,6 +439,17 @@ button {
           align-items: center;
   background-position: center 0;
 }
+.form_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 .form_block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -352,6 +458,9 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .form_header {
   position: fixed;
@@ -372,15 +481,6 @@ button {
 .form_headcontent li {
   margin-left: 30px;
 }
-.form_button {
-  padding: 4px 23px 5px 23px;
-  background-color: #BA323D;
-  color: #fff;
-  border-radius: 15px;
-}
-.form_button a {
-  color: #fff;
-}
 .form_item a {
   color: #000000;
 }
@@ -396,19 +496,16 @@ button {
   font-weight: 400;
   margin-bottom: 44px;
 }
-.form_block a {
-  padding: 19px 77px;
-  color: #fff;
-  background-color: rgba(209, 188, 190, 0.631372549);
-  border-radius: 10px;
-  margin-top: 20px;
-  text-align: center;
-}
 .form_block input {
   padding: 20px 90px 20px 20px;
   margin-bottom: 40px;
   opacity: 70%;
   border-radius: 10px;
+}
+@media screen and (max-width: 576px) {
+  .form_block input {
+    padding: 20px 36px 20px 20px;
+  }
 }
 .form_button1 {
   display: none;
@@ -418,6 +515,27 @@ button {
   background-color: rgba(209, 188, 190, 0.631372549);
   color: #fff;
   border-radius: 15px;
+}
+@media screen and (max-width: 576px) {
+  .form_photo {
+    padding: 19px 48px;
+  }
+}
+.form_buttons {
+  margin-top: 40px;
+  padding: 19px 75px;
+  color: #fff;
+  border-radius: 15px;
+  background-color: rgba(209, 188, 190, 0.631372549);
+  text-align: center;
+}
+@media screen and (max-width: 576px) {
+  .form_buttons {
+    padding: 19px 48px;
+  }
+}
+.form_buttons a {
+  color: #fff;
 }
 
 .book_info {
@@ -508,92 +626,4 @@ button {
   outline: none;
   border-radius: 5px;
   color: #ffffff;
-}
-
-.facility_text {
-  width: calc(50% - 100px);
-}
-.facility_text h2 {
-  font-weight: 600;
-  font-size: 60px;
-  line-height: 80px;
-  text-transform: capitalize;
-  color: #000000;
-  margin-top: 40px;
-}
-.facility_text p {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 34px;
-  text-transform: capitalize;
-  color: #000000;
-}
-.facility_name {
-  font-size: 18px;
-  line-height: 34pxr;
-  margin-right: 10px;
-  padding: 15px;
-  background-color: rgba(212, 36, 50, 0.8);
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  color: #ffffff;
-  margin-bottom: 20px;
-}
-.facility_submit {
-  padding: 5px 15px;
-  background-color: #BA323D;
-  color: #fff;
-  border-radius: 10px;
-}
-.facility_inputdate {
-  background-color: rgba(212, 36, 50, 0.8);
-  padding: 15px;
-  font-family: "Roboto Mono", monospace;
-  color: #ffffff;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-}
-.facility_timer {
-  font-size: 18px;
-  padding: 15px;
-  background-color: rgba(212, 36, 50, 0.8);
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  color: #ffffff;
-}
-.facility_request {
-  margin-top: 20px;
-  font-size: 18px;
-  padding: 15px;
-  background-color: rgba(212, 36, 50, 0.8);
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  color: #ffffff;
-}
-.facility_image {
-  width: 50%;
-}
-.facility_image img {
-  width: 100%;
-}
-.facility_input {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 200px;
-  margin-left: 30px;
-}
-.facility_label {
-  margin-top: 20px;
-  text-align: center;
-  margin-bottom: 10px;
 }
