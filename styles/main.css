@@ -659,7 +659,7 @@ button {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   text-align: center;
-  background-color: #4b6289 !important;
+  background-color: #BA323D;
   position: relative;
   overflow: hidden;
 }
@@ -669,7 +669,7 @@ button {
   top: 100%;
   width: 100%;
   height: 100%;
-  background-color: #4b5889 !important;
+  background-color: #BA323D;
   -webkit-transition: top 0.5s cubic-bezier(1, 0, 0, 1);
   transition: top 0.5s cubic-bezier(1, 0, 0, 1);
   padding: 0 5px 0 5px;
@@ -694,6 +694,7 @@ button {
 .addEventButtons a {
   color: black;
   font-weight: 300;
+  border-radius: 10px;
 }
 
 .emptyForm {
@@ -720,7 +721,14 @@ button {
 
 .sidebar-title {
   padding: 50px 6% 50px 12%;
-  background-color: #5A649C !important;
+  background-color: #BA323D;
+}
+.sidebar-title a {
+  padding: 5px 20px;
+  background-image: linear-gradient(135deg, #8d8dd4, #45ced4);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
 }
 .sidebar-title h4 {
   margin-top: 0;
@@ -845,8 +853,6 @@ button {
 }
 
 .addEvent {
-  -webkit-box-shadow: 0 5px 15px rgb(57, 168, 228);
-          box-shadow: 0 5px 15px rgb(57, 168, 228);
   background-color: #39a8e4;
   padding: 10px;
   padding-left: 3em;
@@ -873,7 +879,7 @@ button {
   position: fixed;
   z-index: 99;
   width: 100%;
-  background-color: #5a649c !important;
+  background-color: #BA323D;
   display: block;
 }
 .mobile-header a i {
