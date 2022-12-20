@@ -17,3 +17,5 @@ window.addEventListener("scroll", () => {
       toTop.classList.remove("active");
     }
   })
+
+  AOS.init();
